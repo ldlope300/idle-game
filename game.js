@@ -15,5 +15,5 @@ function btnPress() {
 function btnPressed() {
   score++;
 
-  postToPage(score);
+  postToPage(score1);
 }
