@@ -30,11 +30,10 @@ function btnPress(gather, 10000) {
 if(gather > 100){
   hidden.show(;)
 }
-
+if(gather > 100){
+  hidden.show()
+}
  function booHide() {
    hidden.hide(1);
 
-   if(gather > 100){
-     hidden.show()
-   }
  }
