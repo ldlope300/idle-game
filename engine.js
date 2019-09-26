@@ -120,6 +120,20 @@ class HTMLElement {
     let element = this.getElement();
     element.classList.add(className);
   }
+  changeFont(font) {
+    let element = this.getElement();
+    element.style.fontFamily = font;
+  }
+  addBorder(color) {
+    this.style('border-style', 'solid');
+    this.style('border-width', '5px');
+    if(color) {
+      this.style('border-color', color);
+    }
+  }
+  removeBorder() {
+    this.style('border-style', 'none');
+  }
 }
 
 class Button extends HTMLElement {
@@ -192,4 +206,8 @@ function require(filename) {
   let script = document.createElement('script');
   script.setAttribute('src', filename);
   document.body.appendChild(script);
+}
+
+function changeFont(font) {
+  document.body.style.fontFamily = font;
 }
