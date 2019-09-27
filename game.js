@@ -1,11 +1,17 @@
 var score = 1; // Create a variable to store the score in
 var hey = new Button('Good Luck', btn)
 var title = new Title('Welcome to the Game'); // Create a title element
-var button = new Button('hello', btnPress);   // Create a button element
+var button = new Button('hello', btnPress);   // Create a button element HEAD
+var hidden = new Button('Boo!', booHide);
+//hidden.hide();
+var gather = 1                  // Create a text element
+
+=======
 var hidden = new Button('Boo!');
 //hidden.hide();
 var scr = new Text(score);                    // Create a text element
 //changes
+>>>>>>> upstream/master
 setInterval(btnPress, 1000);   // Set up a loop
 setInterval(gather)
 function btnPress(gather, 10000) {
@@ -22,12 +28,14 @@ function btnPress(gather, 10000) {
   if(score > 15) {
     hidden.hide(500);
   }
-
+//HEAD
+//=======
 function btnPress() {
   score++;
   scr.edit(score);
+//>>>>>>> upstream/master
 }
- if(score = 1000){
+// if(score = 1000){
 
  }
 //if(gather > 100){
